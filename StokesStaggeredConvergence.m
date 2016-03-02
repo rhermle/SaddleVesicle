@@ -86,6 +86,7 @@ REPS = 10;
 num = [25 50 75 100 200];
 tic;
 for i = 1:length(num)
+    num(i)
     for j = 1:REPS
         [ p u v x y] = StokesStaggered(g, num(i), p0, mu, g, height, width, R, L);
     end
