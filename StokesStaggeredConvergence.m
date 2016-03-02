@@ -83,9 +83,9 @@ ylabel('y');
 
 %%%%%%%%%%%%%benchmark%%%%%%%%%%%%%%%%
 REPS = 10;
-num = [25 50 75 100];
+num = [25 50 75 100 200 400];
 tic;
-for i = 1:4
+for i = 1:length(num)
     for j = 1:REPS
         [ p u v x y] = StokesStaggered(g, num(i), p0, mu, g, height, width, R, L);
     end
