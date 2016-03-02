@@ -83,7 +83,7 @@ end
 
 count = count-1;  %  Count is 3M^2?
 %A = zeros(count); 
-A = sparse([],[],[],count,count,5*count)
+A = sparse([],[],[],count,count,5*count);
 b = zeros(count,1);
 
 % Iterate through p-grid and set equations
