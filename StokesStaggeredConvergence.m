@@ -88,6 +88,7 @@ tic;
 for i = 1:length(num)
     num(i)
     for j = 1:REPS
+        j
         [ p u v x y] = StokesStaggered(g, num(i), p0, mu, g, height, width, R, L);
     end
     averageTime(i) = toc / REPS;
